@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<title>CSS page</title>
+</head>
+
+<body>
+	<div class="wrappper">
+	<!-- Navigaion -->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="BizWeb2/index.html">Tour</a></li>
+
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a Href="#">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Top Container -->
+		<section class="top-container">
+			<header class="showcase">
+				<h1>Your Web Presence</h1>
+				<p>Hello world. This is a project lesson of html and css code with the aim of using css grid for responsive websites</p>
+				<a href="#" class="btn">Read More</a>
+			</header>
+			<div class="top-box top-box-a">
+				<h4>Membership</h4>
+				<p class="price">$199/mo</p>
+<!--				<a href="" class="btn">Buy Now</a> -->
+<!-- paypal button for payment -->
+
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="ULVA3RAZQMHHG">
+                <table>
+                <tr><td><input type="hidden" name="on0" value="Colors">Colors</td></tr><tr><td><select name="os0">
+                	<option value="Opal 1">Opal 1 $15.00 USD</option>
+                	<option value="Mauve 2">Mauve 2 $17.00 USD</option>
+                	<option value="Jade 3">Jade 3 $19.00 USD</option>
+                </select> </td></tr>
+                </table>
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to   pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+<!-- end of paypal button for payment -->
+
+			</div>
+			<div class="top-box top-box-b">
+				<h4>Pro Membership</h4>
+				<p class="price">$299/mo</p>
+				<a href="" class="btn">Buy Now</a>
+			</div>
+		</section>
+		
+		<!-- Boxes Section -->
+		
+		<section class="boxes">
+
+			<div class="box">
+				<i class="fas fa-chart-pie fa-4x"></i>
+				<h3>Analytics</h3>
+				<p>This is the Analytics paragraph for the box. It is used for demonstration</p>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-globe fa-4x"></i>
+				<h3>Marketing</h3>
+				<p>This is the Analytics paragraph for the box. It is used for demonstration</p>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-cog fa-4x"></i>
+				<h3>Development</h3>
+				<p>This is the Analytics paragraph for the box. It is used for demonstration</p>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-users fa-4x"></i>
+				<h3>Support</h3>
+				<p>Verify word count. This is the Analytics paragraph for the box. It is used for demonstration</p>
+			</div>
+
+		</section>
+		
+		<!-- Info Section -->
+		
+		<section class="info">
+			<img src="img/pic1.jpg" alt="">
+			<div>
+				<h2>Your Business On The Web</h2>
+				<p>This is a 30 word paragraph. It will be verified at the after coding is done and adjusted accordingly. These are the last 10 words that complete word count. hahaha</p>
+				<a href="#" class="btn">Learn More</a>
+			</div>
+		</section>
+		
+		<!-- Portfolio -->
+		
+		<section class="portfolio">
+			<img src="https://source.unsplash.com/random/200x200" alt="">
+			<img src="https://source.unsplash.com/random/201x200" alt="">
+			<img src="https://source.unsplash.com/random/202x200" alt="">
+			<img src="https://source.unsplash.com/random/203x200" alt="">
+			<img src="https://source.unsplash.com/random/204x200" alt="">
+			<img src="https://source.unsplash.com/random/205x200" alt="">
+			<img src="https://source.unsplash.com/random/206x200" alt="">
+			<img src="https://source.unsplash.com/random/207x200" alt="">
+			<img src="https://source.unsplash.com/random/208x200" alt="">
+		</section>
+		
+		<!-- Footer -->
+		<footer>
+			<p>GridBiz &copy; 2018</p>
+		</footer>
+		
+	</div>
+	<!-- Wrapper Ends -->
+	
+</body>
+</html>
