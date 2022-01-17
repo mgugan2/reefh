@@ -44,6 +44,8 @@ class PaypalIPN
      */
     public function getPaypalUri()
     {
+        file_put_contents("filetest.txt","Testing for file write, reached get uri/n");
+
         if ($this->use_sandbox) {
             return self::SANDBOX_VERIFY_URI;
         } else {
