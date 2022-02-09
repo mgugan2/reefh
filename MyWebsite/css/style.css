@@ -166,8 +166,9 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 700px) {
-	.top-container {
+/* @media (max-width: 700px) { */
+@media (orientation: portrait) {
+		.top-container {
 		grid-template-areas:
 		'showcase showcase'
 		'top-box-a top-box-b';
@@ -192,7 +193,7 @@ footer {
 	}
 }
 
-@media (max-width: 500px) {
+@media (orientation: portrait) {
 	.top-container {
 		grid-template-areas:
 		'showcase'
