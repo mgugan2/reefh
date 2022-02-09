@@ -199,4 +199,19 @@ footer {
 		'top-box-a'
 		'top-box-b';
 	}
+
+    .box .box-text {
+	    display: none;
+    }
+
+    .top-box-b {
+	    margin-bottom: 2rem;
+    }
+
+    .info {
+	    margin-top: 2rem;
+	    font-size: 75%;
+	    overflow-wrap: break-word;
+    }
+
 }	
