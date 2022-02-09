@@ -203,6 +203,7 @@ footer {
 
     .box .box-text {
 	    display: none;
+		display: grid;
     }
 
     .top-box-b {
