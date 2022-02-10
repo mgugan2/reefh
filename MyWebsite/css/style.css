@@ -169,8 +169,8 @@ footer {
 }
 
 /* Media Queries */
-/* @media (max-width: 700px) { */
-@media (orientation: portrait) {
+@media (max-width: 700px) {
+/* @media (orientation: portrait) { */
 		.top-container {
 		grid-template-areas:
 		'showcase showcase'
@@ -196,15 +196,16 @@ footer {
 	}
 }
 
-@media (orientation: portrait) {
-	.top-container {
+/* @media (orientation: portrait) { */
+@media (max-width: 500px) and (orientation: portrait) {
+		.top-container {
 		grid-template-areas:
 		'showcase'
 		'top-box-a'
 		'top-box-b';
 	}
 
-    .box .box-text {
+	.box .box-text {
 		display: none;
     }
 
