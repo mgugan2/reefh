@@ -202,8 +202,8 @@ footer {
 	}
 
     .box .box-text {
-	    display: none;
 		display: grid;
+	    display: none;
     }
 
     .top-box-b {
