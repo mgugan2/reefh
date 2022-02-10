@@ -197,7 +197,7 @@ footer {
 }
 
 /* @media (orientation: portrait) { */
-@media (min-width: 1440px) and (orientation: portrait) {
+@media (min-width: 1500px) and (orientation: portrait) {
 		.top-container {
 		grid-template-areas:
 		'showcase'
