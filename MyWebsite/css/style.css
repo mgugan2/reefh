@@ -123,6 +123,8 @@ img {
 /* Boxes */
 .boxes {
 	display: grid;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -139,6 +141,7 @@ img {
 	background: var(--primary);
 	box-shadow: var(--shadow);
 	display: grid;
+	margin-bottom: 2rem;
 	grid-gap: 30px;
 	grid-template-columns: repeat(2, 1fr);
 	padding: 3rem;
@@ -202,14 +205,13 @@ footer {
 	}
 
     .box .box-text {
-		display: grid;
-	    display: none;
+		display: none;
     }
 
-    .top-box-b {
+/*    .top-box-b {
 	    margin-bottom: 2rem;
     }
-
+*/
     .info {
 	    margin-top: 2rem;
 	    font-size: 75%;
