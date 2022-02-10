@@ -187,6 +187,8 @@ footer {
 	
 	.info {
 		grid-template-columns: 1fr;
+	    font-size: 75%;
+	    overflow-wrap: break-word;
 	}
 	
 	.info .btn {
@@ -214,7 +216,6 @@ footer {
     }
 */
     .info {
-	    margin-top: 2rem;
 	    font-size: 75%;
 	    overflow-wrap: break-word;
     }
