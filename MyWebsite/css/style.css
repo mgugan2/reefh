@@ -198,8 +198,8 @@ footer {
 	}
 }
 
-/* @media (orientation: portrait) { */
-@media (max-width: 990px) and (orientation: portrait) {
+/* @media (max-width: 990px) and (orientation: portrait) { */
+@media (max-width: 500px) {
 		.top-container {
 		grid-template-areas:
 		'showcase'
