@@ -19,18 +19,15 @@
         <ul class="navbar-nav-left">
           <li>
 <!--            <a href="#">Menu</a> -->
-                <form>
-
+            <form>
 <!--            <h4>Categories</h4> -->
-
 <!--            <a href="#">Categories</a> -->
-                <label for="category">Categories</label>
-        		<select title="Categories" id="category">
-        			<option onclick="chgsrc()" value="faucet">Faucets</option>
-        			<option onclick="chgsrc()" value="pipe">Copper Pipes</option>
-        		</select>
-                <p id="catg"></p>
-
+              <label for="category">Categories</label>
+          		<select title="Categories" id="category">
+          			<option onclick="chgsrc()" value="faucet">Faucets</option>
+          			<option onclick="chgsrc()" value="pipe">Copper Pipes</option>
+          		</select>
+<!--              <p id="catg"></p> -->
             </form>
           </li>
           <li>
@@ -65,7 +62,17 @@
     <div class="mobile-menu hidden" id="menu">
       <ul>
         <li>
-          <a href="#">Menu</a>
+<!--          <a href="#">Menu</a> -->
+          <form>
+            <label for="category">Categories</label>
+<!--            <select title="Categories" id="category"> -->
+            <select title="Categories">
+              <option onclick="chgsrc()" value="faucet">Faucets</option>
+              <option onclick="chgsrc()" value="pipe">Copper Pipes</option>
+            </select>
+<!--            <p id="catgm"></p> -->
+          </form>
+            
         </li>
         <li>
           <a href="#">Rewards</a>
@@ -180,44 +187,6 @@
       </div>
     </section>
 
-    <section>
-      <script>
-        var repl = /\wbox/;
-        var filename="fbox";
-        var catgmenu;
-        var boxitem;
-        var mysrcpath;
-
-        function chgsrc() {
-            boxitem = document.querySelectorAll(".grid-col-2");
-            catgmenu = document.getElementById("category").value;
-            getcatg();
-            if(boxitem != null) {
-                      for (var i = boxitem.length; i--;) {
-                        mysrcpath = boxitem[i].querySelector("img").src;
-                        mysrcpath = mysrcpath.replace(repl,filename);
-                        boxitem[i].querySelector("img").setAttribute("src", mysrcpath);
-                      }
-            }
-            else
-                console.log("chgsrc boxitem is null");
-        }
-
-        function getcatg() {
-            if(catgmenu != null) {
-               if(catgmenu == "faucet") {
-                    filename = "fbox";
-                }
-                else
-                {   filename = "pbox";
-                }
-            }
-            else
-                console.log("getcatg doc id is null"); 
-        }
-        </script>
-    </section>
-
     <div class="divider"></div>
 
     <footer class="footer">
@@ -246,6 +215,6 @@
       </div>
     </footer>
 
-<!--    <script src="script/script.js"></script> -->
+    <script src="script/script.js"></script>
   </body>
 </html>
