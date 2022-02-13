@@ -26,6 +26,7 @@ selectelem.addEventListener("change", function() {
 mselectelem.addEventListener("change", function() {
   catgmenu = mselectelem.selectedIndex;
   chgsrc();
+  navToggle()
 });
 
 function chgsrc() {
