@@ -1,6 +1,9 @@
 const btn = document.getElementById('menu-btn')
 const nav = document.getElementById('menu')
 
+var selectelem = document.getElementById("category");
+var mselectelem = document.getElementById("mobilecat");
+
 var repl = /\wbox/;
 var filename="fbox";
 var catgmenu;
@@ -15,10 +18,18 @@ function navToggle() {
 
 btn.addEventListener('click', navToggle)
 
+selectelem.addEventListener("change", function() {
+  catgmenu = selectelem.selectedIndex;
+  chgsrc();
+});
+
+mselectelem.addEventListener("change", function() {
+  catgmenu = mselectelem.selectedIndex;
+  chgsrc();
+});
+
 function chgsrc() {
   boxitem = document.querySelectorAll(".grid-col-2");
-  catgmenu = document.getElementById("category").value;
-  console.log("entered chgsrc", catgmenu);
   getcatg();
   if(boxitem != null) {
     for (var i = boxitem.length; i--;) {
@@ -28,13 +39,12 @@ function chgsrc() {
     }
   }
   else
-    console.log("chgsrc boxitem is null");
+    { console.log("chgsrc boxitem is null"); }
 }
 
 function getcatg() {
-  console.log("entered getcatg");
   if(catgmenu != null) {
-    if(catgmenu == "faucet") {
+    if(catgmenu == "0") {
       filename = "fbox";
     }
     else
