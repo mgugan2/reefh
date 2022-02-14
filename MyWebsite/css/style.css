@@ -124,9 +124,8 @@ img {
 
 /* Boxes */
 .boxes {
-/*	display: grid; */
-	display: flow-root;
-margin-top: 2rem;
+	display: grid;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -135,8 +134,8 @@ margin-top: 2rem;
 .box {
 	background: var(--primary);
 	text-align: center;
-/*	padding: 1.5rem 2rem; */
-	padding: 1.5em 2em;
+	padding: 1.5rem 2rem;
+/*	padding: 1.5em 2em; */
 	box-shadow: var(--shadow);
 }
 
