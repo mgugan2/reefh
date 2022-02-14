@@ -134,8 +134,8 @@ img {
 .box {
 	background: var(--primary);
 	text-align: center;
-	padding: 1.5rem 2rem;
-/*	padding: 1.5em 2em; */
+/*	padding: 1.5rem 2rem; */
+	padding: 1.5em 2em;
 	box-shadow: var(--shadow);
 }
 
